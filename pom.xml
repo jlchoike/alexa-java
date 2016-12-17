@@ -17,6 +17,7 @@
 
   <dependencies>
     <dependency>
+
       <groupId>com.amazon.alexa</groupId>
       <artifactId>alexa-skills-kit</artifactId>
       <version>1.2</version>
@@ -79,6 +80,11 @@
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-java-sdk-dynamodb</artifactId>
       <version>1.9.40</version>
+    </dependency>
+    <dependency>
+      <groupId>com.amazonaws</groupId>
+      <artifactId>Athena-JDBC41</artifactId>
+      <version>1.0.0</version>
     </dependency>
   </dependencies>
 
