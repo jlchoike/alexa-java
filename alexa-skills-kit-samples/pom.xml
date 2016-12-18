@@ -22,7 +22,11 @@
 
   <dependencies>
     <dependency>
-
+      <groupId>alexa-skills-kit-samples</groupId>
+      <artifactId>external-dependencies</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
       <groupId>com.amazon.alexa</groupId>
       <artifactId>alexa-skills-kit</artifactId>
       <version>1.2</version>
@@ -111,7 +115,22 @@
             <target>1.7</target>
           </configuration>
         </plugin>
-
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-shade-plugin</artifactId>
+          <version>2.4.3</version>
+          <configuration>
+            <!-- put your configurations here -->
+          </configuration>
+          <executions>
+            <execution>
+              <phase>package</phase>
+              <goals>
+                <goal>shade</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
