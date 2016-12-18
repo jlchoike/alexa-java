@@ -3,3 +3,4 @@ build/
 target/
 .idea/
 *.iml
+/alexa-skills-kit-samples/dependency-reduced-pom.xml
